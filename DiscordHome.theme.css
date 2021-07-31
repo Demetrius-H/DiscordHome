@@ -1,0 +1,85 @@
+/**
+ * @name DiscordHome
+ * @author DemetriusH
+ * @version 0.0.1
+ * @description Welcome home! This cozy theme turns Discord into a customizable tool while also retaining its features and giving the user a great view.
+ */
+
+:root {
+	--background: url('https://assets.unenvironment.org/styles/article_billboard_image/s3/2021-05/alberta-2297204_1920.jpg?h=1483c54f&amp;itok=GdjA9GRu');
+	--background-blur: none; /* I recommend importing a pre-blurred image as using --background-blur will cause your Discord to be very slow. If you do not have one of those, you can set a pixel amount and use the theme blur, however you will experience a lot of lag. */
+}
+/* User customization */
+
+.titleBar-AC4pGV {
+	display: none;
+}
+/* Hide title bar */
+
+.appMount-3lHmkl, .app-1q1i1E, .app-2rEoOp, .bg-h5JY_x, .layers-3iHuyZ, .container-2lgZY8, .wrapper-3NnKdC, .tree-2wKJdG, .scroller-1Bvpku, .sidebar-2K8pFh, .privateChannels-1nO12o, .scroller-1JbKMe, .panels-j1Uci_, .chat-3bRxxu, .content-yTz4x3, .chatContent-a9vAAp, .messagesWrapper-1sRNjr, .scroller-2LSbBU, .scrollerContent-WzeG7R, .scrollerInner-2YIMLh, .title-3qD0b-, .sidebar-2K8pFh, .container-3w7J-x {
+	background: transparent !important;
+}
+/* Setting elements transparent */
+
+body {
+	background: var(--background) !important;
+	background-repeat: no-repeat !important;
+	background-size: cover !important;
+	backdrop-filter: blur(var(--background-blur)) !important;
+}
+/* Setting the background */
+
+.searchBar-6Kv8R2 {
+	box-shadow: none;
+}
+/* Removes awkward box shadow on the left search bar */
+
+.content-yTz4x3::before {
+	display: none;
+}
+/* Removes header line */
+
+.children-19S4PO::after {
+	display: none;
+}
+/* Removes spacer between name and icons */
+
+.form-2fGMdU::before {
+	display: none;
+}
+/* Removes strange gradient next to chat */
+
+.guilds-1SWlCJ .scroller-1Bvpku {
+  contain: unset;
+  margin-top: 62px;
+}
+
+.guilds-1SWlCJ .scroller-1Bvpku .tutorialContainer-2sGCg9 {
+  position: fixed;
+  transform: translateY(-105%);
+}
+/* Pins Home button (credit to Doggybootsy) */
+
+.guilds-1SWlCJ {
+	padding: 10px;
+	padding-top: 5px;
+	width: 72px;
+}
+/* Styles the main guild wrapper */
+
+.item-2hkk8m, .unread-2lAfLh {
+	width: 8px;
+	margin-left: 0px;
+	border-radius: 4px;
+}
+/* Turns unread notification into a circle */
+
+.blobContainer-pmnxKB, .listItemWrapper-KhRmzM, .guildSeparator-33mFX6 {
+	margin-left: 8px;
+}
+/* Moves all items in the guilds list over */
+
+.unreadMentionsIndicatorTop-2-tcdU, .unreadMentionsIndicatorBottom-2mDYbI {
+	margin-left: 14px;
+}
+/* Applies a special rule for unread indicators */
